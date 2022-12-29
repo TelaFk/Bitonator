@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$gold: rgb(223, 181, 66);
+$white: rgb(220, 226, 226);
+$grey: rgba(167, 165, 159, 0.267);
+$font: "Montserrat", sans-serif;
+
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+  max-width: 100vw;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+}
+
+%header {
+  text-align: center;
+  color: $gold;
+  font-size: 2rem;
+  text-decoration: underline;
+}
